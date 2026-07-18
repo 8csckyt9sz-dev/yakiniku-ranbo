@@ -703,3 +703,23 @@ section {
     gap: 4px;
   }
 }
+/* ===== Hero Slider ===== */
+
+.hero-slider {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+}
+
+.hero-slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.hero-slide.active {
+    opacity: 1;
+}
