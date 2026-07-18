@@ -39,3 +39,18 @@ const revealObserver = new IntersectionObserver(
 document.querySelectorAll(".reveal").forEach((element) => {
   revealObserver.observe(element);
 });
+// ===== Hero Slider =====
+
+const slides = document.querySelectorAll(".hero-slide");
+let current = 0;
+
+setInterval(() => {
+  slides[current].classList.remove("active");
+
+  current++;
+  if (current >= slides.length) {
+    current = 0;
+  }
+
+  slides[current].classList.add("active");
+}, 5000);
