@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>メニュー | 焼肉らんぼ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Serif+JP:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .menu-page-hero{min-height:42vh;padding:130px 5vw 70px;display:flex;align-items:end;color:#fff;background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url('images/menu-beef.jpg') center/cover}
+    .menu-page-hero h1{margin:0;font:700 clamp(42px,7vw,82px)/1.2 "Noto Serif JP",serif}
+    .price-list{width:min(900px,100%);margin:0 auto}
+    .price-group{margin-bottom:70px}
+    .price-group h2{font:700 34px/1.4 "Noto Serif JP",serif;border-bottom:1px solid rgba(0,0,0,.22);padding-bottom:14px}
+    .price-row{display:flex;justify-content:space-between;gap:20px;padding:16px 0;border-bottom:1px dashed rgba(0,0,0,.16)}
+    .price-row span:last-child{white-space:nowrap}
+    .back-link{display:inline-block;margin-top:20px;border-bottom:1px solid}
+  </style>
+</head>
+<body>
+  <header class="site-header is-scrolled">
+    <a class="brand" href="index.html">
+      <img src="images/logo.png" alt="焼肉らんぼ" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+      <span class="brand-fallback">焼肉らんぼ</span>
+    </a>
+    <nav class="global-nav" style="display:flex">
+      <a href="index.html">トップへ戻る</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="menu-page-hero">
+      <div>
+        <p class="eyebrow">MENU</p>
+        <h1>お品書き</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="price-list">
+        <div class="price-group">
+          <h2>牛肉</h2>
+          <div class="price-row"><span>上塩タン</span><span>¥0,000</span></div>
+          <div class="price-row"><span>上ロース</span><span>¥0,000</span></div>
+          <div class="price-row"><span>上カルビ</span><span>¥0,000</span></div>
+          <div class="price-row"><span>ハラミ</span><span>¥0,000</span></div>
+        </div>
+
+        <div class="price-group">
+          <h2>ホルモン</h2>
+          <div class="price-row"><span>ホルモン</span><span>¥000</span></div>
+          <div class="price-row"><span>ミノ</span><span>¥000</span></div>
+          <div class="price-row"><span>レバー</span><span>¥000</span></div>
+        </div>
+
+        <div class="price-group">
+          <h2>一品・ドリンク</h2>
+          <div class="price-row"><span>キムチ盛り合わせ</span><span>¥000</span></div>
+          <div class="price-row"><span>冷麺</span><span>¥000</span></div>
+          <div class="price-row"><span>生ビール</span><span>¥000</span></div>
+          <div class="price-row"><span>ソフトドリンク</span><span>¥000</span></div>
+        </div>
+
+        <p>※価格・内容は正式なメニューに合わせて変更してください。</p>
+        <a class="back-link" href="index.html">← トップページへ戻る</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
