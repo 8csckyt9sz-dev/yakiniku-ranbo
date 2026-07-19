@@ -22,7 +22,7 @@ body {
   color: var(--text);
   background-color: var(--paper);
   background-image:
-    linear-gradient(rgba(5,5,5,.82), rgba(5,5,5,.82)),
+    linear-gradient(rgba(5,5,5,.58), rgba(5,5,5,.58)),
     url("images/logo.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -343,7 +343,7 @@ section {
 
 /* ===== Menu ===== */
 .menu-section {
-  background: rgba(5,5,5,.82);
+  background: rgba(5,5,5,.38);
   color: #fff;
 }
 
@@ -442,7 +442,7 @@ section {
 
 /* ===== Access ===== */
 .access-section {
-  background: rgba(5,5,5,.88);
+  background: rgba(5,5,5,.44);
 }
 
 .access-grid {
@@ -487,7 +487,7 @@ section {
 .site-footer {
   padding: 70px 5vw 30px;
   color: #fff;
-  background: rgba(5,5,5,.9);
+  background: rgba(5,5,5,.5);
 }
 
 .price-group h2 {
