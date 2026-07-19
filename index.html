@@ -204,7 +204,35 @@
     <p class="copyright">© YAKINIKU RANBO</p>
   </footer>
 
-  <a class="mobile-reserve" href="tel:0000000000">電話・予約</a>
+  <button class="reserve-trigger" id="reserveTrigger" type="button" aria-label="予約方法を選ぶ" aria-expanded="false" aria-controls="reserveDialog">
+    予約する
+  </button>
+
+  <div class="reserve-modal" id="reserveDialog" aria-hidden="true">
+    <div class="reserve-backdrop" data-reserve-close></div>
+    <div class="reserve-sheet" role="dialog" aria-modal="true" aria-labelledby="reserveTitle" tabindex="-1">
+      <div class="reserve-sheet-inner">
+        <h2 id="reserveTitle">ご予約方法をお選びください</h2>
+        <div class="reserve-options">
+          <a class="reserve-option" href="tel:0794-63-2915" aria-label="電話で予約する 0794-63-2915">
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span><strong>電話で予約する</strong><small>0794-63-2915</small></span>
+          </a>
+          <a class="reserve-option" href="https://www.instagram.com/yakiniku.lanbo_ono" target="_blank" rel="noopener noreferrer" aria-label="InstagramのDMで予約する（新しいタブで開きます）">
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+              <circle cx="12" cy="12" r="4"></circle>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle>
+            </svg>
+            <span><strong>Instagramで予約する</strong><small>DMからご予約ください</small></span>
+          </a>
+        </div>
+        <button class="reserve-close" type="button" data-reserve-close aria-label="予約メニューを閉じる">閉じる</button>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
