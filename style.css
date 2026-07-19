@@ -240,26 +240,7 @@ section {
 
 /* ===== Sections ===== */
 .section {
-  position: relative;
-  isolation: isolate;
   padding: 120px 5vw;
-}
-
-.section::before,
-.site-footer::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  background: url("images/logo.png") center / clamp(320px, 58vw, 680px) no-repeat;
-  opacity: .62;
-  pointer-events: none;
-}
-
-.section > *,
-.site-footer > * {
-  position: relative;
-  z-index: 1;
 }
 
 .section-heading {
@@ -497,8 +478,6 @@ section {
 
 /* ===== Footer ===== */
 .site-footer {
-  position: relative;
-  isolation: isolate;
   padding: 70px 5vw 30px;
   color: #fff;
   background: rgba(5,5,5,.5);
