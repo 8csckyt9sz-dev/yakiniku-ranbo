@@ -73,8 +73,9 @@ section {
 }
 
 .brand img {
-  width: 130px;
-  max-height: 52px;
+  width: 68px;
+  height: 68px;
+  max-height: 68px;
   object-fit: contain;
   object-position: left center;
 }
@@ -694,7 +695,9 @@ body.reserve-open {
   }
 
   .brand img {
-    width: 110px;
+    width: 54px;
+    height: 54px;
+    max-height: 54px;
   }
 
   .header-reserve {
