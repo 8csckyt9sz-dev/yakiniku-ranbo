@@ -1,9 +1,9 @@
 /* ===== Base ===== */
 :root {
   --bg: #0b0b0b;
-  --paper: #f4f1eb;
-  --text: #181818;
-  --muted: #6f6b64;
+  --paper: #050505;
+  --text: #f4f1eb;
+  --muted: #aaa49b;
   --line: rgba(255,255,255,.18);
   --accent: #8d211b;
   --header-height: 78px;
@@ -20,7 +20,14 @@ html {
 body {
   margin: 0;
   color: var(--text);
-  background: var(--paper);
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(rgba(5,5,5,.82), rgba(5,5,5,.82)),
+    url("images/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto, clamp(300px, 55vw, 640px);
+  background-attachment: fixed;
   font-family: "Noto Sans JP", sans-serif;
   line-height: 1.8;
   letter-spacing: .04em;
@@ -336,7 +343,7 @@ section {
 
 /* ===== Menu ===== */
 .menu-section {
-  background: #111;
+  background: rgba(5,5,5,.82);
   color: #fff;
 }
 
@@ -426,7 +433,7 @@ section {
   justify-content: space-between;
   align-items: center;
   gap: 32px;
-  border: 1px solid rgba(0,0,0,.14);
+  border: 1px solid rgba(255,255,255,.18);
 }
 
 .instagram-box p:last-child {
@@ -435,7 +442,7 @@ section {
 
 /* ===== Access ===== */
 .access-section {
-  background: #e9e4dc;
+  background: rgba(5,5,5,.88);
 }
 
 .access-grid {
@@ -465,7 +472,7 @@ section {
   display: grid;
   grid-template-columns: 100px 1fr;
   gap: 18px;
-  border-bottom: 1px solid rgba(0,0,0,.15);
+  border-bottom: 1px solid rgba(255,255,255,.18);
 }
 
 .shop-info dt {
@@ -480,7 +487,15 @@ section {
 .site-footer {
   padding: 70px 5vw 30px;
   color: #fff;
-  background: #090909;
+  background: rgba(5,5,5,.9);
+}
+
+.price-group h2 {
+  border-color: rgba(255,255,255,.24) !important;
+}
+
+.price-row {
+  border-color: rgba(255,255,255,.18) !important;
 }
 
 .footer-inner {
