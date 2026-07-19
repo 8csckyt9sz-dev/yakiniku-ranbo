@@ -14,6 +14,7 @@
 }
 
 html {
+  background: var(--paper);
   scroll-behavior: smooth;
 }
 
@@ -22,7 +23,7 @@ body {
   isolation: isolate;
   margin: 0;
   color: var(--text);
-  background: var(--paper);
+  background: transparent;
   font-family: "Noto Sans JP", sans-serif;
   line-height: 1.8;
   letter-spacing: .04em;
@@ -33,9 +34,8 @@ body::before {
   position: fixed;
   z-index: 0;
   inset: 0;
-  background: url("images/logo.png") center / clamp(340px, 62vw, 720px) no-repeat;
-  mix-blend-mode: screen;
-  opacity: .86;
+  background: url("images/logo-watermark.png") center / min(42vw, 440px) no-repeat;
+  opacity: .4;
   pointer-events: none;
 }
 
@@ -714,6 +714,11 @@ body.reserve-open {
 @media (max-width: 860px) {
   :root {
     --header-height: 66px;
+  }
+
+  body::before {
+    background-size: min(76vw, 300px);
+    opacity: .45;
   }
 
   .site-header {
